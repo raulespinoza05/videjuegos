@@ -85,8 +85,8 @@ class CategoriasController extends Controller
     {
         $id = $request->input('id');
         $categorias = Categorias::find($id);
-        $categorias->nombre = $request->input("nombre");
-        $categorias->estatus = $request->input("estatus");
+        $categorias->nombre = $request->input('nombre');
+        $categorias->estatus = $request->input('estatus');
 
         $categorias->save();
 
